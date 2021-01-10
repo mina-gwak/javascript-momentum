@@ -29,7 +29,7 @@ function loadName() {
   if (user === null) {
     askForName();
   } else {
-    showGreeting();
+    showGreeting(user);
   }
 }
 

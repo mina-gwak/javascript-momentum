@@ -1,8 +1,133 @@
+body {
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  box-sizing: border-box;
+  color: #fff;
+  font-family: 'Oswald', sans-serif;
+  width: 100vw;
+  height: 100vh;
+  margin: 0;
+}
+
+input,
+input::placeholder,
+.greeting {
+  font-family: 'Oswald', sans-serif;
+  color: #fff;
+  font-size: 30px;
+  text-align: center;
+  letter-spacing: 1.5px;
+}
+
+input {
+  border: none;
+  background-color: rgba(0, 0, 0, 0);
+  border-bottom: 5px solid #fff;
+  padding: 8px;
+}
+
+input:focus,
+input:active {
+  outline: none;
+}
+
+button {
+  padding: 0;
+  background-color: rgba(0, 0, 0, 0);
+  border: none;
+  cursor: pointer;
+}
+
+button:focus,
+button:active {
+  outline: none;
+}
+
+.clock h1 {
+  font-size: 150px;
+  font-weight: 700;
+  margin: 0;
+}
+
 .form,
 .greeting {
   display: none;
 }
 
+.form {
+  margin-bottom: 40px;
+}
+
 .show {
   display: block;
+}
+
+.greeting {
+  margin: 0 0 40px 0;
+}
+
+.toDoForm {
+  margin-bottom: 20px;
+}
+
+.toDoForm input {
+  border-bottom: 3px solid #fff;
+}
+
+.toDoForm input,
+.toDoForm input::placeholder {
+  font-size: 22px;
+}
+
+.toDoList {
+  width: 200px;
+  list-style: none;
+  padding: 0;
+  margin: 0;
+}
+
+.toDoList li {
+  height: fit-content;
+  margin-bottom: 5px;
+}
+
+.toDoList li span {
+  display: inline-block;
+  width: 170px;
+  margin-left: 10px;
+}
+
+.toDoList li button {
+  vertical-align: top;
+}
+
+.weather {
+  position: absolute;
+  top: 20px;
+  right: 20px;
+}
+
+.bgImage {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: inherit;
+  height: inherit;
+  z-index: -1;
+  animation: fadeIn 0.5s linear;
+}
+
+@keyframes fadeIn {
+  
+  from {
+    opacity: 0;
+  }
+
+  to {
+    opacity: 1;
+  }
+
 }
